@@ -27,4 +27,21 @@ console.log(itemsPrice)
 
 // Find method
 
+const foundItem = items.find((item) => {
+    return item.name === 'Book'
+})
 
+console.log(foundItem)
+
+
+// For each method
+
+items.forEach((item)=>{
+    console.log(item.price)
+})
+
+const hasInexpensiveItems = items.some((item) => {
+    return item.price <= 10000
+})
+
+console.log(hasInexpensiveItems)
